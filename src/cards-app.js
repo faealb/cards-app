@@ -1,4 +1,7 @@
 import { LitElement, html, css } from 'lit';
+import "@lrnwebcomponents/accent-card/accent-card.js";
+import "@lrnwebcomponents/meme-maker/meme-maker.js";
+import "clothing-card/src/clothing-card.js";
 
 const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
 
@@ -52,35 +55,15 @@ class CardsApp extends LitElement {
 
   constructor() {
     super();
-    this.header = 'My app';
+    this.header = 'my app';
   }
 
   render() {
     return html`
       <main>
-        <div class="logo"><img alt="open-wc logo" src=${logo} /></div>
-        <h1>${this.header}</h1>
-
-        <p>Edit <code>src/CardsApp.js</code> and save to reload.</p>
-        <a
-          class="app-link"
-          href="https://open-wc.org/guides/developing-components/code-examples/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Code examples
-        </a>
-      </main>
-
-      <p class="app-footer">
-        🚽 Made with love by
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/open-wc"
-          >open-wc</a
-        >.
-      </p>
+        <meme-maker alt="grumpy cat" image-url="https://media.istockphoto.com/id/1434414228/photo/stern-sad-cat-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wis7NGP0_4_Vwti3xioilh3NfYrwHO-JoRMvFVzr6Ck=" top-text="I am tired" bottom-text="my tired is tired"></meme-maker>
+        <clothing-card clothing="hoodie sales" information="Almost out of stock!"></clothing-card>
+    </main>
     `;
   }
 }
