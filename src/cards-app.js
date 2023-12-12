@@ -55,14 +55,14 @@ class CardsApp extends LitElement {
 
   constructor() {
     super();
-    this.header = 'my app';
+    this.header = 'My app';
   }
 
   render() {
     return html`
       <main>
-        <meme-maker alt="grumpy cat" image-url="https://media.istockphoto.com/id/1434414228/photo/stern-sad-cat-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wis7NGP0_4_Vwti3xioilh3NfYrwHO-JoRMvFVzr6Ck=" top-text="I am tired" bottom-text="my tired is tired"></meme-maker>
-        <clothing-card clothing="hoodie sales" information="Almost out of stock!"></clothing-card>
+        <meme-maker alt="Cat stalking a small toy" image-url="https://cdn2.thecatapi.com/images/9j5.jpg" top-text="I bring you" bottom-text="the death"></meme-maker>
+        <clothing-card clothing="Testing t-shirt" information="Get these now!"></clothing-card>
     </main>
     `;
   }
