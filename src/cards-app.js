@@ -1,7 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import "@lrnwebcomponents/accent-card/accent-card.js";
 import "@lrnwebcomponents/meme-maker/meme-maker.js";
-import "clothing-card/src/clothing-card.js";
 
 const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
 
@@ -62,7 +61,6 @@ class CardsApp extends LitElement {
     return html`
       <main>
         <meme-maker alt="Cat stalking a small toy" image-url="https://cdn2.thecatapi.com/images/9j5.jpg" top-text="I bring you" bottom-text="the death"></meme-maker>
-        <clothing-card clothing="Testing t-shirt" information="Get these now!"></clothing-card>
     </main>
     `;
   }
