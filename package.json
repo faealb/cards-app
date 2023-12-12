@@ -16,6 +16,7 @@
     "start": "web-dev-server"
   },
   "dependencies": {
+    "@lrnwebcomponents/accent-card": "^7.0.18",
     "@lrnwebcomponents/meme-maker": "^7.0.18",
     "lit": "^2.0.2"
   },
